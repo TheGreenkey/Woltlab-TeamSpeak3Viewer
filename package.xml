@@ -5,7 +5,7 @@
 		<packagename language="de"><![CDATA[TeamSpeak3 Viewer]]></packagename>
 		<packagedescription><![CDATA[TeamSpeak3 Viewer]]></packagedescription>
 		<packagedescription language="de"><![CDATA[TeamSpeak3 Viewer]]></packagedescription>
-		<version>1.0.4</version>
+		<version>1.0.5</version>
 		<date>2013-12-26</date>
 	</packageinformation>
 	
@@ -33,27 +33,36 @@
 		<instruction type="file">files.tar</instruction>
 		<instruction type="language">language/*.xml</instruction>
 		<instruction type="option">options.xml</instruction>
-		<instruction type="template">templates.tar</instruction>
 		<instruction type="userGroupOption">userGroupOption.xml</instruction>
+		<instruction type="acpTemplate">acptemplates.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="acpMenu">acpmenu.xml</instruction>
 		<instruction type="pageMenu">pagemenu.xml</instruction>
+		<instruction type="sql">install.sql</instruction>
 	</instructions>
 	
 	<instructions type="update" fromversion="1.0.1">
 		<instruction type="file">files.tar</instruction>
 		<instruction type="language">language/*.xml</instruction>
 		<instruction type="option">options.xml</instruction>
-		<instruction type="template">templates.tar</instruction>
 		<instruction type="userGroupOption">userGroupOption.xml</instruction>
+		<instruction type="acpTemplate">acptemplates.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="acpMenu">acpmenu.xml</instruction>
 		<instruction type="pageMenu">pagemenu.xml</instruction>
+		<instruction type="sql">install.sql</instruction>
 	</instructions>
 	
 	<instructions type="update" fromversion="1.0.2">
 		<instruction type="file">files.tar</instruction>
 		<instruction type="language">language/*.xml</instruction>
 		<instruction type="option">options.xml</instruction>
-		<instruction type="template">templates.tar</instruction>
 		<instruction type="userGroupOption">userGroupOption.xml</instruction>
+		<instruction type="acpTemplate">acptemplates.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="acpMenu">acpmenu.xml</instruction>
 		<instruction type="pageMenu">pagemenu.xml</instruction>
+		<instruction type="sql">install.sql</instruction>
 	</instructions>
 
 	<instructions type="update" fromversion="1.0.3">
@@ -66,5 +75,13 @@
 		<instruction type="acpMenu">acpmenu.xml</instruction>
 		<instruction type="pageMenu">pagemenu.xml</instruction>
 		<instruction type="sql">install.sql</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.0.4">
+		<instruction type="file">files.tar</instruction>
+		<instruction type="acpTemplate">acptemplates.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="language">language/*.xml</instruction>
+		<instruction type="sql">update_105.sql</instruction>
 	</instructions>
 </package>

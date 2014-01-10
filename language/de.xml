@@ -20,7 +20,7 @@
             <item name="wcf.acp.menu.link.community.teamspeak3viewer.add"><![CDATA[TeamSpeak3 Server hinzufügen]]></item>
             <item name="wcf.acp.group.option.category.user.board.teamspeak3viewer"><![CDATA[TeamSpeak3 Viewer]]></item>
             <item name="wcf.acp.group.option.category.admin.community.teamspeak3viewer"><![CDATA[TeamSpeak3 Viewer]]></item>
-            <item name="wcf.acp.group.option.user.board.teamspeak3viewer.canView"><![CDATA[Kann TeamSpeak3Viewer Seite besuchen]]></item>
+            <item name="wcf.acp.group.option.user.board.teamspeak3viewer.canView"><![CDATA[Kann TeamSpeak3Viewer Seite sehen]]></item>
             <item name="wcf.acp.group.option.admin.community.teamspeak3viewer.canView"><![CDATA[Kann TeamSpeak3 Server sehen]]></item>
             <item name="wcf.acp.group.option.admin.community.teamspeak3viewer.canAdd"><![CDATA[Kann TeamSpeak3 Server hinzufügen]]></item>
             <item name="wcf.acp.group.option.admin.community.teamspeak3viewer.canEdit"><![CDATA[Kann TeamSpeak3 Server bearbeiten]]></item>

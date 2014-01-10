@@ -1,0 +1,1 @@
+ALTER TABLE wcf1_teamspeak3viewer_servers CHANGE serverAddress serverAddress VARCHAR(50) NOT NULL;
