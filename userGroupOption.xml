@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/groupoptions.xsd">
+	<import>
+		<categories>
+			<category name="user.board.teamspeak3viewer">
+				<parent>user.board</parent>
+				<showorder>20</showorder>
+			</category>
+			<category name="admin.community.teamspeak3viewer">
+				<parent>admin.community</parent>
+				<showorder>20</showorder>
+			</category>
+		</categories>
+		<options>
+			<option name="user.board.teamspeak3viewer.canView">
+				<categoryname>user.board.teamspeak3viewer</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>1</showorder>
+				<visible>1</visible>
+			</option>	
+			<option name="admin.community.teamspeak3viewer.canView">
+				<categoryname>admin.community.teamspeak3viewer</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>1</showorder>
+				<enableoptions>admin.community.teamspeak3viewer.canAdd,admin.community.teamspeak3viewer.canEdit,admin.community.teamspeak3viewer.canDelete</enableoptions>
+				<visible>1</visible>
+			</option>	
+			<option name="admin.community.teamspeak3viewer.canAdd">
+				<categoryname>admin.community.teamspeak3viewer</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>2</showorder>
+				<visible>1</visible>
+			</option>
+			<option name="admin.community.teamspeak3viewer.canEdit">
+				<categoryname>admin.community.teamspeak3viewer</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>3</showorder>
+				<visible>1</visible>
+			</option>				
+			<option name="admin.community.teamspeak3viewer.canDelete">
+				<categoryname>admin.community.teamspeak3viewer</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>4</showorder>
+				<visible>1</visible>
+			</option>	
+		</options>
+	</import>
+</data>

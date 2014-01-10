@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/acpMenu.xsd">
+	<import>
+		<acpmenuitem name="wcf.acp.menu.link.community.teamspeak3viewer">
+			<controller><![CDATA[wcf\lib\data\TeamSpeak3ViewerPage]]></controller>
+			<parent>wcf.acp.menu.link.community</parent>
+			<showorder>4</showorder>
+			<permissions>admin.community.teamspeak3viewer.canView</permissions>
+		</acpmenuitem>
+		<acpmenuitem name="wcf.acp.menu.link.community.teamspeak3viewer.list">
+			<controller><![CDATA[wcf\lib\data\TeamSpeak3ViewerListPage]]></controller>
+			<parent>wcf.acp.menu.link.community.teamspeak3viewer</parent>
+			<showorder>1</showorder>
+			<permissions>admin.community.teamspeak3viewer.canView</permissions>
+		</acpmenuitem>
+		<acpmenuitem name="wcf.acp.menu.link.community.teamspeak3viewer.add">
+			<controller><![CDATA[wcf\lib\data\TeamSpeak3ViewerAddPage]]></controller>
+			<parent>wcf.acp.menu.link.community.teamspeak3viewer</parent>
+			<showorder>2</showorder>
+			<permissions>admin.community.teamspeak3viewer.canAdd</permissions>
+		</acpmenuitem>
+	</import>
+</data>
