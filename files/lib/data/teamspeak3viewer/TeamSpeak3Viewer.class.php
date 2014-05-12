@@ -26,8 +26,12 @@ class TeamSpeak3Viewer extends DatabaseObject {
         if ($this->connection !== false) {
             throw new SystemException('already connected');
         }
-        $this->connection = \TeamSpeak3::factory("serverquery://" . $queryAdminName . ":" . $queryAdminPassword . "@" . $serverAddress . ":" . $serverQueryPort . "/?server_port=" . $serverPort);
-        return true;
+        try {
+            $this->connection = \TeamSpeak3::factory("serverquery://" . $queryAdminName . ":" . $queryAdminPassword . "@" . $serverAddress . ":" . $serverQueryPort . "/?server_port=" . $serverPort);
+            return true;
+        } catch(\TeamSpeak3_Adapter_ServerQuery_Exception $e) {
+            return false;
+        }
     }
 
     public function disconnect() {

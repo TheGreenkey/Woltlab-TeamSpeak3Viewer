@@ -5,8 +5,8 @@
 		<packagename language="de"><![CDATA[TeamSpeak3 Viewer]]></packagename>
 		<packagedescription><![CDATA[TeamSpeak3 Viewer]]></packagedescription>
 		<packagedescription language="de"><![CDATA[TeamSpeak3 Viewer]]></packagedescription>
-		<version>1.0.5</version>
-		<date>2013-12-26</date>
+		<version>1.0.6</version>
+		<date>2014-05-10</date>
 	</packageinformation>
 	
 	<authorinformation>
@@ -83,5 +83,10 @@
 		<instruction type="template">templates.tar</instruction>
 		<instruction type="language">language/*.xml</instruction>
 		<instruction type="sql">update_105.sql</instruction>
+	</instructions>
+	<instructions type="update" fromversion="1.0.5">
+		<instruction type="file">files.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="language">language/*.xml</instruction>
 	</instructions>
 </package>

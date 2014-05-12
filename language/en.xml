@@ -44,6 +44,7 @@
             <item name="wcf.teamspeak3viewer.channel"><![CDATA[Channel]]></item>
             <item name="wcf.teamspeak3viewer.descr"><![CDATA[Description]]></item>
             <item name="wcf.teamspeak3viewer.connectNow"><![CDATA[Connect now...]]></item>
+			<item name="wcf.teamspeak3viewer.offline"><![CDATA[This Server is currently down]]></item>
 	</category>
         <category name="wcf.page">
             <item name="wcf.page.teamspeak3viewer"><![CDATA[TeamSpeak]]></item>

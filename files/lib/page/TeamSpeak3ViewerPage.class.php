@@ -39,12 +39,15 @@ class TeamSpeak3ViewerPage extends AbstractPage {
                 foreach($servers as $key => $server) {
                     $server = (object) $server;
                     $ts3 = new TeamSpeak3Viewer($server->serverID);
-                    
-                    $ts3->connect($ts3->serverAddress,$ts3->serverPort, $ts3->queryPort, $ts3->queryAdminName, $ts3->queryAdminPassword);
-                    $servers[$key]['serverInfo'] = $ts3->getServerInfo();
-                    $servers[$key]['channels'] = $ts3->getChannels();
-                    $servers[$key]['clients'] = $ts3->getClients();
-                    $ts3->disconnect();
+                    if($ts3->connect($ts3->serverAddress,$ts3->serverPort, $ts3->queryPort, $ts3->queryAdminName, $ts3->queryAdminPassword)) {
+                        $servers[$key]['status'] = "online";
+                        $servers[$key]['serverInfo'] = $ts3->getServerInfo();
+                        $servers[$key]['channels'] = $ts3->getChannels();
+                        $servers[$key]['clients'] = $ts3->getClients();
+                        $ts3->disconnect();                        
+                    } else {
+                        $servers[$key]['status'] = "offline";
+                    }
                 }
                 WCF::getTPL()->assign(array(
                     'servers' => $servers
