@@ -48,7 +48,7 @@ class TeamSpeak3Viewer extends DatabaseObject {
         foreach ($clients as $client) {
             if ($client['client_type'] != 1) {
                 $result[] = array(
-                    'name' => $client['client_nickname'],
+                    'name' => (string) $client['client_nickname'],
                     'talking' => $client['client_flag_talking'],
                     'channel' => $client['cid'],
                     'input_muted' => $client['client_input_muted'],
@@ -61,15 +61,14 @@ class TeamSpeak3Viewer extends DatabaseObject {
 
     public function getServerInfo() {
         $serverInfo = $this->connection->getInfo();
-
         $result = array(
-            'name' => $serverInfo['virtualserver_name'],
+            'name' => (string) $serverInfo['virtualserver_name'],
             'address' => $this->serverAddress,
             'port' => $this->serverPort,
             'hasPassword' => $serverInfo['virtualserver_flag_password'],
-            'welcome_message' => $serverInfo['virtualserver_welcomemessage'],
-            'platform' => $serverInfo['virtualserver_platform'],
-            'version' => $serverInfo['virtualserver_version'],
+            'welcome_message' => (string) $serverInfo['virtualserver_welcomemessage'],
+            'platform' => (string) $serverInfo['virtualserver_platform'],
+            'version' => (string) $serverInfo['virtualserver_version'],
             'uptime' => $serverInfo['virtualserver_uptime'],
             'clients' => $serverInfo['virtualserver_clientsonline'],
             'maxclients' => $serverInfo['virtualserver_maxclients'],
@@ -121,7 +120,7 @@ class TeamSpeak3Viewer extends DatabaseObject {
             $result[] = array(
                 'id' => $channel['cid'],
                 'pid' => $channel['pid'],
-                'name' => $name,
+                'name' => (string) $name,
                 'hasPassword' => $channel['channel_flag_password'],
                 'clients' => $channel['total_clients'],
                 'maxclients' => $channel['channel_maxclients'],

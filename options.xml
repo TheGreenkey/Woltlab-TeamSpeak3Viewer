@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/option.xsd">
-	<delete>
-		<category name="module.teamspeak3viewer" />
-		<category name="teamspeak3viewer" />
-		<category name="teamspeak3viewer.general" />
-		<category name="teamspeak3viewer.query" />
-		
-		<option name="module_teamspeak3viewer" />
-		<option name="teamspeak3viewer_address" />
-		<option name="teamspeak3viewer_port" />
-		<option name="teamspeak3viewer_password" />
-		<option name="teamspeak3viewer_query_port" />
-		<option name="teamspeak3viewer_admin_name" />
-		<option name="teamspeak3viewer_admin_password" />
-	</delete>
+    <import>
+        <categories>
+            <category name="teamspeak3viewer" />
+            <category name="teamspeak3viewer.general">
+                <parent>teamspeak3viewer</parent>
+            </category>
+        </categories>
+        <options>
+            <option name="ts3_refreshrate">
+                <categoryname>teamspeak3viewer.general</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>5</defaultvalue>
+            </option>
+        </options>
+    </import>
 </data>

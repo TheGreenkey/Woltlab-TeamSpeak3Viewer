@@ -1,52 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="de">
-        <category name="wcf.acp.teamspeak3viewer">
-            <item name="wcf.acp.teamspeak3viewer.list"><![CDATA[TeamSpeak3 Server auflisten]]></item>
-			<item name="wcf.acp.teamspeak3viewer.add"><![CDATA[TeamSpeak3 Server hinzufügen]]></item>
-			<item name="wcf.acp.teamspeak3viewer.edit"><![CDATA[TeamSpeak3 Server bearbeiten]]></item>
-            <item name="wcf.acp.teamspeak3viewer.serverAddress"><![CDATA[IP Adresse]]></item>
-            <item name="wcf.acp.teamspeak3viewer.serverPort"><![CDATA[Port]]></item>
-            <item name="wcf.acp.teamspeak3viewer.serverPassword"><![CDATA[Passwort]]></item>
-            <item name="wcf.acp.teamspeak3viewer.queryPort"><![CDATA[Query Port]]></item>
-            <item name="wcf.acp.teamspeak3viewer.queryAdminName"><![CDATA[Admin-Benutzername]]></item>
-            <item name="wcf.acp.teamspeak3viewer.queryAdminPassword"><![CDATA[Admin-Passwort]]></item>
-            <item name="wcf.acp.teamspeak3viewer.joinName"><![CDATA[Gastname]]></item>
-            <item name="wcf.acp.teamspeak3viewer.descr"><![CDATA[Beschreibung]]></item>
-			<item name="wcf.acp.teamspeak3viewer.delete.sure"><![CDATA[Wollen Sie WIRKLICH diesen Server löschen? Dieser Vorgang kann nicht rückgängig gemacht werden!]]></item>
-        </category>
-        <category name="wcf.acp">
-			<item name="wcf.acp.menu.link.community.teamspeak3viewer"><![CDATA[TeamSpeak3 Server]]></item>
-            <item name="wcf.acp.menu.link.community.teamspeak3viewer.list"><![CDATA[TeamSpeak3 Server auflisten]]></item>
-            <item name="wcf.acp.menu.link.community.teamspeak3viewer.add"><![CDATA[TeamSpeak3 Server hinzufügen]]></item>
-            <item name="wcf.acp.group.option.category.user.board.teamspeak3viewer"><![CDATA[TeamSpeak3 Viewer]]></item>
-            <item name="wcf.acp.group.option.category.admin.community.teamspeak3viewer"><![CDATA[TeamSpeak3 Viewer]]></item>
-            <item name="wcf.acp.group.option.user.board.teamspeak3viewer.canView"><![CDATA[Kann TeamSpeak3Viewer Seite sehen]]></item>
-            <item name="wcf.acp.group.option.admin.community.teamspeak3viewer.canView"><![CDATA[Kann TeamSpeak3 Server sehen]]></item>
-            <item name="wcf.acp.group.option.admin.community.teamspeak3viewer.canAdd"><![CDATA[Kann TeamSpeak3 Server hinzufügen]]></item>
-            <item name="wcf.acp.group.option.admin.community.teamspeak3viewer.canEdit"><![CDATA[Kann TeamSpeak3 Server bearbeiten]]></item>
-            <item name="wcf.acp.group.option.admin.community.teamspeak3viewer.canDelete"><![CDATA[Kann TeamSpeak3 Server löschen]]></item>
-        </category>
-	<category name="wcf.teamspeak3viewer">
-            <item name="wcf.teamspeak3viewer.headline"><![CDATA[TeamSpeak3 Viewer]]></item>
-            <item name="wcf.teamspeak3viewer.serverAddress"><![CDATA[IP-Adresse]]></item>
-            <item name="wcf.teamspeak3viewer.serverPort"><![CDATA[Port]]></item>
-            <item name="wcf.teamspeak3viewer.serverPassword"><![CDATA[Passwort]]></item>
-            <item name="wcf.teamspeak3viewer.version"><![CDATA[Version]]></item>
-            <item name="wcf.teamspeak3viewer.platform"><![CDATA[Server Betriebssystem]]></item>
-            <item name="wcf.teamspeak3viewer.channels"><![CDATA[Channels]]></item>
-            <item name="wcf.teamspeak3viewer.clients"><![CDATA[Clients]]></item>
-            <item name="wcf.teamspeak3viewer.connectionData"><![CDATA[Verbindungsdaten]]></item>
-            <item name="wcf.teamspeak3viewer.informations"><![CDATA[Informationen]]></item>
-            <item name="wcf.teamspeak3viewer.input_muted"><![CDATA[Client hat Mikrofon stumm geschaltet]]></item>
-            <item name="wcf.teamspeak3viewer.output_muted"><![CDATA[Client hat Headset stumm geschaltet]]></item>
-            <item name="wcf.teamspeak3viewer.talking"><![CDATA[Client spricht zurzeit]]></item>
-            <item name="wcf.teamspeak3viewer.client"><![CDATA[Client]]></item>
-            <item name="wcf.teamspeak3viewer.channel"><![CDATA[Channel]]></item>
-            <item name="wcf.teamspeak3viewer.descr"><![CDATA[Beschreibung]]></item>
-            <item name="wcf.teamspeak3viewer.connectNow"><![CDATA[Jetzt verbinden...]]></item>
-			<item name="wcf.teamspeak3viewer.offline"><![CDATA[Dieser Server ist zurzeit offline]]></item>
-	</category>
-        <category name="wcf.page">
-            <item name="wcf.page.teamspeak3viewer"><![CDATA[TeamSpeak]]></item>
-        </category>
+    <category name="wcf.acp.teamspeak3viewer">
+        <item name="wcf.acp.teamspeak3viewer.list"><![CDATA[TeamSpeak3 Server auflisten]]></item>
+        <item name="wcf.acp.teamspeak3viewer.add"><![CDATA[TeamSpeak3 Server hinzufügen]]></item>
+        <item name="wcf.acp.teamspeak3viewer.edit"><![CDATA[TeamSpeak3 Server bearbeiten]]></item>
+        <item name="wcf.acp.teamspeak3viewer.serverAddress"><![CDATA[IP Adresse]]></item>
+        <item name="wcf.acp.teamspeak3viewer.serverPort"><![CDATA[Port]]></item>
+        <item name="wcf.acp.teamspeak3viewer.serverPassword"><![CDATA[Passwort]]></item>
+        <item name="wcf.acp.teamspeak3viewer.queryPort"><![CDATA[Query Port]]></item>
+        <item name="wcf.acp.teamspeak3viewer.queryAdminName"><![CDATA[Admin-Benutzername]]></item>
+        <item name="wcf.acp.teamspeak3viewer.queryAdminPassword"><![CDATA[Admin-Passwort]]></item>
+        <item name="wcf.acp.teamspeak3viewer.joinName"><![CDATA[Gastname]]></item>
+        <item name="wcf.acp.teamspeak3viewer.descr"><![CDATA[Beschreibung]]></item>
+        <item name="wcf.acp.teamspeak3viewer.delete.sure"><![CDATA[Wollen Sie WIRKLICH diesen Server löschen? Dieser Vorgang kann nicht rückgängig gemacht werden!]]></item>
+    </category>
+    <category name="wcf.acp">
+        <item name="wcf.acp.option.category.teamspeak3viewer"><![CDATA[TeamSpeak3Viewer]]></item>
+        <item name="wcf.acp.option.category.teamspeak3viewer.general"><![CDATA[General]]></item>
+        <item name="wcf.acp.option.ts3_refreshrate"><![CDATA[Aktualisierungsrate in Sekunden]]></item>
+        <item name="wcf.acp.menu.link.community.teamspeak3viewer"><![CDATA[TeamSpeak3 Server]]></item>
+        <item name="wcf.acp.menu.link.community.teamspeak3viewer.list"><![CDATA[TeamSpeak3 Server auflisten]]></item>
+        <item name="wcf.acp.menu.link.community.teamspeak3viewer.add"><![CDATA[TeamSpeak3 Server hinzufügen]]></item>
+        <item name="wcf.acp.group.option.category.user.board.teamspeak3viewer"><![CDATA[TeamSpeak3 Viewer]]></item>
+        <item name="wcf.acp.group.option.category.admin.community.teamspeak3viewer"><![CDATA[TeamSpeak3 Viewer]]></item>
+        <item name="wcf.acp.group.option.user.board.teamspeak3viewer.canView"><![CDATA[Kann TeamSpeak3Viewer Seite sehen]]></item>
+        <item name="wcf.acp.group.option.admin.community.teamspeak3viewer.canView"><![CDATA[Kann TeamSpeak3 Server sehen]]></item>
+        <item name="wcf.acp.group.option.admin.community.teamspeak3viewer.canAdd"><![CDATA[Kann TeamSpeak3 Server hinzufügen]]></item>
+        <item name="wcf.acp.group.option.admin.community.teamspeak3viewer.canEdit"><![CDATA[Kann TeamSpeak3 Server bearbeiten]]></item>
+        <item name="wcf.acp.group.option.admin.community.teamspeak3viewer.canDelete"><![CDATA[Kann TeamSpeak3 Server löschen]]></item>
+    </category>
+    <category name="wcf.teamspeak3viewer">
+        <item name="wcf.teamspeak3viewer.headline"><![CDATA[TeamSpeak3 Viewer]]></item>
+        <item name="wcf.teamspeak3viewer.serverAddress"><![CDATA[IP-Adresse]]></item>
+        <item name="wcf.teamspeak3viewer.serverPort"><![CDATA[Port]]></item>
+        <item name="wcf.teamspeak3viewer.serverPassword"><![CDATA[Passwort]]></item>
+        <item name="wcf.teamspeak3viewer.version"><![CDATA[Version]]></item>
+        <item name="wcf.teamspeak3viewer.platform"><![CDATA[Server Betriebssystem]]></item>
+        <item name="wcf.teamspeak3viewer.channels"><![CDATA[Channels]]></item>
+        <item name="wcf.teamspeak3viewer.clients"><![CDATA[Clients]]></item>
+        <item name="wcf.teamspeak3viewer.connectionData"><![CDATA[Verbindungsdaten]]></item>
+        <item name="wcf.teamspeak3viewer.informations"><![CDATA[Informationen]]></item>
+        <item name="wcf.teamspeak3viewer.input_muted"><![CDATA[Client hat Mikrofon stumm geschaltet]]></item>
+        <item name="wcf.teamspeak3viewer.output_muted"><![CDATA[Client hat Headset stumm geschaltet]]></item>
+        <item name="wcf.teamspeak3viewer.talking"><![CDATA[Client spricht zurzeit]]></item>
+        <item name="wcf.teamspeak3viewer.client"><![CDATA[Client]]></item>
+        <item name="wcf.teamspeak3viewer.channel"><![CDATA[Channel]]></item>
+        <item name="wcf.teamspeak3viewer.descr"><![CDATA[Beschreibung]]></item>
+        <item name="wcf.teamspeak3viewer.connectNow"><![CDATA[Jetzt verbinden...]]></item>
+        <item name="wcf.teamspeak3viewer.offline"><![CDATA[Dieser Server ist zurzeit offline]]></item>
+    </category>
+    <category name="wcf.page">
+        <item name="wcf.page.teamspeak3viewer"><![CDATA[TeamSpeak]]></item>
+    </category>
 </language>

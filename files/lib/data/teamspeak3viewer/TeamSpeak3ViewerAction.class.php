@@ -1,5 +1,4 @@
 <?php
-
 namespace wcf\data\teamspeak3viewer;
 
 use wcf\data\AbstractDatabaseObjectAction;
