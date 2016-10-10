@@ -87,7 +87,9 @@
                     <img src="{$__wcf->getPath()}images/teamspeak3/server_green.png" alt="server" /> {$server.serverInfo.name}
                     {foreach from=$server.channels item=channel}
                         <div class="item {if $channel.pid > 0}subChannel{else}channel{/if}" data-id='{$channel.id}' data-pid='{$channel.pid}'>
-                            {if $channel.align}
+                            {if $channel.repeat}
+                                <span class="spacer" style="text-align:center;white-space: nowrap;overflow: hidden;">{$channel.repeat|str_repeat:150}</span>
+                            {elseif $channel.align}
                                 <span class="spacer" style="text-align:{$channel.align}">{$channel.name}</span>
                             {else}
                                 {if $channel.hasPassword}

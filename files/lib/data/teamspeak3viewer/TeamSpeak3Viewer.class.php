@@ -116,6 +116,10 @@ class TeamSpeak3Viewer extends DatabaseObject {
                 $align = false;
                 $name = $channel['channel_name'];
             }
+
+            $repeat = false;
+            if (preg_match('/\[\*.*spacer.*\]/', $channel['channel_name']))
+                $repeat = substr($channel['channel_name'], strpos($channel['channel_name'], "]") + 1);
             
             $result[] = array(
                 'id' => $channel['cid'],
@@ -127,7 +131,8 @@ class TeamSpeak3Viewer extends DatabaseObject {
                 'isDefault' => $channel['channel_flag_default'],
                 'type' => $type,
                 'clients' => $channel_clients,
-                'align' => $align
+                'align' => $align,
+                'repeat' => $repeat
             );
         }
         return $result;

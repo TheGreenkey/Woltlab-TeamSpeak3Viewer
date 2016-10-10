@@ -264,6 +264,10 @@ class TeamSpeak3_Viewer_Html implements TeamSpeak3_Viewer_Interface
 
       switch($this->currObj->spacerGetAlign())
       {
+        case TeamSpeak3::SPACER_ALIGN_REPEAT:
+          $extras .= " repeat";
+          break;
+
         case TeamSpeak3::SPACER_ALIGN_CENTER:
           $extras .= " center";
           break;
